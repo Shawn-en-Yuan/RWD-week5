@@ -6,14 +6,77 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title><%- title %></title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="./assets/style/all.css">
 </head>
 
 <body>
-  <header class="header">
-    這是 header
-  </header>
-
+  <ul class="nav flex-column bg-light">
+    <li class="nav-item">
+      <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/e14818f156111b5b0a00492903c1552d319ec9c5/week5/logo-ANSWER.svg" alt="">
+    </li>
+    <li class="nav-item">
+      <a class="nav-link link-dark" aria-current="page" href="#">
+        <span class="material-icons">
+          assessment
+          </span>          
+        Dashboard</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link link-dark" href="#">
+        <span class="material-icons">
+          question_answer
+          </span>
+        Question</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link link-success active" aria-current="page" href="#">
+        <span class="material-icons">
+          assignment
+          </span>
+        Assignment</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link link-dark" href="#">
+        <span class="material-icons">
+          video_library
+          </span>
+        Course</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link link-dark" href="#">
+        <span class="material-icons">
+          supervisor_account
+          </span>
+          
+        Admin</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link link-dark" href="#">
+        <span class="material-icons">
+          settings
+          </span>
+        Settings</a>
+    </li>
+    <!-- 個人大頭貼 -->
+    <li>
+      <div class="card border-0">
+        <div class="row bg-light g-0 align-items-center justify-content-center">
+          <div class="col-2">
+            <img  class="rounded-circle" src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week5/andychen.jpeg?raw=true" alt="">
+          </div>
+          <div class="col-10">
+            <div class="card-body">
+              <h5 class=" h6 card-title">Andy Chen</h5>
+              <p class="card-text fs-small"><small class="text-muted">andy0401@mail.com</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+  
   <%- contents %>
 
   <footer class="footer">
@@ -21,6 +84,7 @@
   </footer>
   <script src="./assets/js/vendors.js"></script>
   <script src="./assets/js/all.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
 </body>
 
 </html>

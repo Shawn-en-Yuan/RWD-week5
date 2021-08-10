@@ -1,23 +1,47 @@
-$color: #00cc99;
-
-.header {
-  height: 200px;
-  background-color: #00cc99;
+// _variablity.scss
+.fs-small{
+  font-size: 14px;
+  line-height: 24px;
 }
-
-.footer {
-  height: 200px;
-  background-color: #00cc99;
+.fs-smaller{
+  font-size: 12px;
+  line-height: 24px;
 }
-
-.box {
-  width: 100px;
-  height: 100px;
-  background-color: red;
-  display: flex;
-  transition: all 0.5s;
-  &:hover {
-    width: 200px;
-    background-color: $color;
+// _layout.scss
+.sideTitle{
+  min-width: 200px;
+}
+.nav{
+  position: fixed;
+  min-width: 200px;
+  min-height: 100vh;
+  &-link{
+    padding: 12px 32px;
+    position: relative;
   }
+}
+.nav-item{
+    img{
+      padding: 40px 32px;
+    }
+}
+.nav-item .active::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 4px;
+  height: 32px;
+  border-left:4px solid #198754;
+}
+.card img{
+  width: 40px;
+  height: auto;
+}
+// _index.scss
+.main{
+  margin-left: 232px;
+}
+.list-group-item.active {
+  border-color: #CED4DA;
+  background-color: #F8F9FA;
 }
