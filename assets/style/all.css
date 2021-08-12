@@ -1,0 +1,42 @@
+.fs-small {
+  font-size: 14px;
+  line-height: 24px; }
+
+.fs-smaller {
+  font-size: 12px;
+  line-height: 24px; }
+
+.sideTitle {
+  min-width: 200px; }
+
+.nav {
+  position: fixed;
+  min-width: 200px;
+  min-height: 100vh; }
+  .nav-link {
+    padding: 12px 32px;
+    position: relative; }
+
+.nav-item img {
+  padding: 40px 32px; }
+
+.nav-item .active::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 4px;
+  height: 32px;
+  border-left: 4px solid #198754; }
+
+.card img {
+  width: 40px;
+  height: auto; }
+
+.main {
+  margin-left: 232px; }
+
+.list-group-item.active {
+  border-color: #CED4DA;
+  background-color: #F8F9FA; }
+
+/*# sourceMappingURL=all.css.map */
